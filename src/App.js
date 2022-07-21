@@ -7,6 +7,7 @@ import UploadPage from "./upload";
 import ProductPage from "./product";
 import { Button } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
+
 function App() {
   const history = useHistory();
   return (
@@ -32,11 +33,9 @@ function App() {
           <Route exact={true} path="/">
             <MainPageComponent />
           </Route>
-
           <Route exact={true} path="/products/:id">
             <ProductPage />
           </Route>
-
           <Route exact={true} path="/upload">
             <UploadPage />
           </Route>
