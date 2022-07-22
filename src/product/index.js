@@ -31,7 +31,7 @@ function ProductPage() {
 
   const onClickPurchase = () => {
     axios
-      .post(`$API_URL/purchase/${id}`)
+      .post(`${API_URL}/purchase/${id}`)
       .then((result) => {
         message.info("구매가 완료되었습니다");
         getProduct();
